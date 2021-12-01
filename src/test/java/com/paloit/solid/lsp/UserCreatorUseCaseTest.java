@@ -1,6 +1,7 @@
 package com.paloit.solid.lsp;
 
 import com.paloit.solid.lsp.impl.EmailValidatorLiskovOkImpl;
+import com.paloit.solid.lsp.impl.EmailValidatorLiskovViolationImpl;
 import com.paloit.solid.lsp.impl.UserAccountRepositoryMySQLImpl;
 import org.junit.jupiter.api.Test;
 
