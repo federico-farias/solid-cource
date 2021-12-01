@@ -13,6 +13,7 @@ public class UserCreatorUseCase {
 
     public void create(UserAccountInfo user) {
         emailValidator.validate(user);
+        userAccountRepository.save(user);
     }
 
 }
