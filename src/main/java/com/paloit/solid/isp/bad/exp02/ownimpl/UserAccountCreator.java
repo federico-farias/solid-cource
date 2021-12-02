@@ -4,6 +4,7 @@ public class UserAccountCreator {
 
     public IUserService iUserService;
 
+    // Refleja detalles de implementación (Refleja que utiliza al proveedor X)
     public IXProviderNotificationService notificationService;
 
     public UserAccountCreator(IUserService iUserService, IXProviderNotificationService notificationService) {
@@ -13,6 +14,8 @@ public class UserAccountCreator {
 
     public void create(UserInfo user) {
         iUserService.create(user);
+
+        // Refleja que el proveedor requiere del tercer parametro, pero el cliente no lo necesita.
         notificationService.sendMessage(user.getEmail(), "Mi mensaje", null);
     }
 

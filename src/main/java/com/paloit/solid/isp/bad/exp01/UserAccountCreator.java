@@ -2,10 +2,13 @@ package com.paloit.solid.isp.bad.exp01;
 
 public class UserAccountCreator {
 
+    // Refleja que se utiliza el proveedor Mandril
     public IMandrilNotificationService iMandrilNotificationService;
 
+    // Refleja que se utiliza el proveedor Redis
     public IRedisCacheSerivce iRedisCacheSerivce;
 
+    // Tiene más métodos de los que necesita utilizar UserAccountCreator
     public iUserAccountService iMySqlUserAccountService;
 
     public IPersistenceProvider iPersistenceProvider;

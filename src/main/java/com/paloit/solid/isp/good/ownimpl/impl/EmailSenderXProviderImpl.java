@@ -9,6 +9,7 @@ public class EmailSenderXProviderImpl implements EmailSender {
 
     @Override
     public void send(String email, String content) {
+        // De cara al cliente se oculta que el proveedor X requiere del tercer parametro.
         service.sendMessage(email, content, null);
     }
 
